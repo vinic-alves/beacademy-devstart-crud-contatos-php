@@ -13,8 +13,12 @@
     <tbody>
         <?php
         foreach($contatos as $cadacontato){
+            $partes = explode(';', $cadacontato);    // a função explode quebra uma string em várias partes
+            
             echo '<br>';
-                echo '<td>' . $cadacontato . '</td>';
+                echo '<td>' . $partes[0] . '</td>';
+                echo '<td>' . $partes[1] . '</td>';
+                echo '<td>' . $partes[2] . '</td>';
             echo '</tr>';
         }
         ?>
