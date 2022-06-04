@@ -11,6 +11,7 @@ function home () {
     include 'telas/home.php';
 }
 function listar () {
+    $contatos = file('dados/contatos.csv');
     include 'telas/listar.php';
 }
 function relatorio (){
