@@ -1,10 +1,12 @@
 
 <h1>cadastro</h1>
 <hr>
-<form action="">
-    <input type="text" placeholder="Email">
+<form action="" method="post">
+    <input name="nome" type="text" placeholder="nome">
 
-    <input type="password" placeholder="Senha">
+    <input name="email" type="password" placeholder="email">
+
+    <input name="telefone" type="text" placeholder="telefone">
 
     <button>Enviar</button>
 </form>
