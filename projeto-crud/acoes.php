@@ -12,7 +12,9 @@ function cadastro () {
     $arquivo = fopen('dados/contatos.csv', 'a+');
     fwrite($arquivo, "{$nome};{$email};{$telefone}".PHP_EOL);
     fclose($arquivo);
-    echo 'Pronto, cadastro realizado!';
+    
+    $mensagem = "Pronto, cadastro realizado";
+    include 'telas/mensagem.php';
     }
     include 'telas/cadastro.php';
 }

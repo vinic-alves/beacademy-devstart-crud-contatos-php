@@ -12,15 +12,15 @@
     </thead>
     <tbody>
         <?php
-        foreach($contatos as $cadacontato){
-            $partes = explode(';', $cadacontato);    // a função explode quebra uma string em várias partes
+            $partes = explode(';', $cadaContato);    // a função explode quebra uma string em várias partes
+                foreach($contatos as $cadaContato){
             
-            echo '<br>';
-                echo '<td>' . $partes[0] . '</td>';
-                echo '<td>' . $partes[1] . '</td>';
-                echo '<td>' . $partes[2] . '</td>';
-            echo '</tr>';
-        }
+                    echo '<br>';
+                        echo '<td>' . $partes[0] . '</td>';
+                        echo '<td>' . $partes[1] . '</td>';
+                        echo '<td>' . $partes[2] . '</td>';
+                    echo '</tr>';
+                }
         ?>
     </tbody>
 </table>
