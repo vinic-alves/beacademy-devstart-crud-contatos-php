@@ -1,3 +1,5 @@
-<?php
-    echo '<h1>Produto excluido</h1>';
-?>
+<div class="alert alert-success">
+    <?php
+        echo $mensagem;
+    ?>
+</div>

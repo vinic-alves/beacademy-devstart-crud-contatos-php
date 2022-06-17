@@ -1,9 +1,9 @@
 <h1>Login</h1>
 <hr>
 <form action="">
-    <input type="text" placeholder="Email">
+    <input class="form-control mb-3" type="text" placeholder="Email">
 
-    <input type="password" placeholder="Senha">
+    <input class="form-control mb-3" type="password" placeholder="Senha">
 
-    <button>Enviar</button>
+    <button class="btn btn-primary">Enviar</button>
 </form>

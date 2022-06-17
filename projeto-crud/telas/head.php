@@ -5,7 +5,10 @@
         <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
         <meta name="viewport" content="width-device-width, initial">
         <title>Projeto PHP</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="container pt-5" style="background-color:#EFEFEF";>
         
    

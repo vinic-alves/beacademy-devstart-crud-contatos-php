@@ -2,8 +2,8 @@
 
 
 
-<table>
-    <thead>
+<table class="table table-hover table-striped">
+    <thead class="table-dark">
         <tr>
             <th>Nome</th>
             <th>Email</th>
@@ -22,7 +22,7 @@
                         echo '<td>' . $partes[1] . '</td>';
                         echo '<td>' . $partes[2] . '</td>';
                         echo "<td>
-                            <a href= '/excluir?id={$posicao}' class='btn btn-danger btn-sm'>Excluir {$posicao}</a>
+                            <a href= '/excluir?id={$posicao}' class='btn btn-danger btn-sm'>Excluir</a>
                             <a href='/editar?id={$posicao}'class='btn btn-warning btn-sm'>Editar</a>
                             </td>";
                     echo '</tr>';
