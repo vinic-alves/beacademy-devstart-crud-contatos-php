@@ -1,12 +1,12 @@
 
-<h1>cadastro</h1>
+<h1>Novo Contato</h1>
 <hr>
 <form action="" method="post">
-    <input name="nome" type="text" placeholder="nome">
+    <input name="nome" class="form-control mt-2" type="text" placeholder="nome">
 
-    <input name="email" type="text" placeholder="email">
+    <input name="email" class="form-control mt-2" type="text" placeholder="email">
 
-    <input name="telefone" type="text" placeholder="telefone">
+    <input name="telefone" class="form-control mt-2" type="text" placeholder="telefone">
 
-    <button>Enviar</button>
+    <button class="btn btn-primary mt-3">Enviar</button>
 </form>
