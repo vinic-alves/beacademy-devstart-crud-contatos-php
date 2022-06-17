@@ -8,17 +8,22 @@
             <th>Nome</th>
             <th>Email</th>
             <th>telefone</th>
+            <th>ações</th>
         </tr>
     </thead>
     <tbody>
         <?php
-            $partes = explode(';', $cadaContato);    // a função explode quebra uma string em várias partes
-                foreach($contatos as $cadaContato){
+                // a função explode quebra uma string em várias partes
+                foreach ($contatos as $posicao => $cadacontato){
+                    $partes = explode (';', $cadacontato);
             
-                    echo '<br>';
+                    echo '<tr>';
                         echo '<td>' . $partes[0] . '</td>';
                         echo '<td>' . $partes[1] . '</td>';
                         echo '<td>' . $partes[2] . '</td>';
+                        echo "<td>
+                            <a href= '/excluir?id={$posicao}'>Excluir {$posicao}</a>
+                            </td>";
                     echo '</tr>';
                 }
         ?>

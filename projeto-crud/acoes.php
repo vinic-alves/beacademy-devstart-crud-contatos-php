@@ -32,3 +32,23 @@ function relatorio (){
 function erro404() {
     include 'telas/404.php';
 }
+
+function excluir(){
+
+    $id= $_GET['id'];
+
+    $contatos = file('dados/contatos.csv');
+    // função unset significa não configurar ou desconfigurar, irá excluir uma posição do array
+
+    unset($contatos[$id]);
+
+    unlink('dados/contatos.csv');
+
+    $arquivo = fopen('dados/contatos.csv', 'a+');
+
+    foreach($contatos as $cadaContato){
+        fwrite($arquivo, $cadaContato);
+    }
+    $mensagem = 'Pronto, contato excluido';
+    include 'telas/mensagem.php';
+}

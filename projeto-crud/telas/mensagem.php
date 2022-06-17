@@ -1,5 +1,3 @@
-<div>
-    <script>
-        alert("Pronto, cadastro realizado!")
-    </script>
-</div>
+<?php
+    echo '<h1>Produto excluido</h1>';
+?>
